@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train_Ticket_Reservation_Login&Registation</title>
+    <h1 class="hd">National Railway Reservation System</h1>
+    <style>
+        body{ 
+            background: url("/Photo/BG_5.jpg");
+            font-family: 'Poppins',sans-serif;
+            background-repeat: no-repeat;
+            font-weight: bold;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: #deacf1;
+        }
+        .hd{
+            color: #c2164a;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 1000;
+            position: relative;
+        }
+        .main{
+            border:0px black solid;
+	        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            border-radius: 5px;
+	        text-align: center;
+	        margin: 30px 255px;
+	        padding:15px;
+	        margin-bottom: 10px;
+	        width:320px;
+	        color:white;
+        }
+        .menu{
+            display: inline;
+            font-family: 'Poppins',sans-serif;
+            border:0px black solid;
+            border-radius: 5px;
+            background-color:#fff;
+            font-weight: bold;
+            font-size:18px;
+            text-align: center;
+            margin:5px 5px 5px 5px;
+            padding:5px 20px 5px 20px;
+            width:10px;
+            font-weight: bold;
+        }
+        .main a{
+            color:black;
+        }
+        /* a:hover{ 
+            color:blue;
+        }
+        */
+        a:link{
+            text-decoration: none;
+        }
+        .regform{
+            max-width: 450px;
+            width: 100%;
+            background-color: #fff;
+            padding: 25px 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+            margin: 10px 175px;
+        }
+        .regform .textlabel{
+            display: block;
+        }
+        .content .input input{
+            height: 45px;
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            border-radius: 5px;
+            padding-left: 10px;
+            border: 1px solid #ccc;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+        }
+        .content .input .textlabel{
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+        .content .input input:focus,
+        .content .input input:valid{
+            border-color: #9b59b6;
+        }
+        /* input:focus{ 
+            background-color:rgba(255, 235, 205,.6);
+        }
+        */
+        form .btn{
+            height: 45px;
+            margin: 35px 0
+        }
+        
+        form .btn .input{
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+        form .btn .input:hover{
+            /* transform: scale(0.99); */
+            background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+        }
+        form .bnt{
+            height: 45px;
+            margin: 35px 0
+        }
+        
+        form .bnt .output{
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+        form .bnt .output:hover{
+            /* transform: scale(0.99); */
+            background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="main">
+        <p class="menu"><a href="Login.html">LOGIN</a></p>
+        <p class="menu"><a href="Registation.html">REGISTATION</a></p>
+    </div>
+    <div class="regform">
+        <form action="Home.html" method="get" enctype="multipart/form-data">
+            <div class="content">
+                <div class="input">
+                    <label class="textlabel" for="name">User Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input">
+                    <label class="textlabel" for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input">
+                    <label class="textlabel" for="pass">Password:</label>
+                    <input type="password" id="pass" name="pass" required minlength="8">
+                </div>
+            </div>
+            <div class="btn">
+                <button  class="input" type="submit">LOGIN</button>
+            </div>
+            <div class="bnt">
+                <button  class="output" type="submit"><a href="About.html"></i>BACK</a></button>
+                </div>
+            </div>
+        </form>
+    </div> 
+    </center>
+</body>
+</html>
